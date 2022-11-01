@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/feeegy2ovd9bidb0?svg=true)](https://ci.appveyor.com/project/Grey601/javaautomation-api-ci2)
