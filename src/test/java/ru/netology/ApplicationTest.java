@@ -87,7 +87,7 @@ public class ApplicationTest {
     @Test
     void shouldNotSendWithoutPlusInPhoneNumber() {
         open("http://localhost:9999");
-        $("[data-test-id='name'] input").sendKeys("Гревцов Сергей ");
+        $("[data-test-id='name'] input").sendKeys("Гревцов Сергей");
         $("[data-test-id='phone'] input").sendKeys("79164792743");
         $("[data-test-id='agreement'] span").click();
         $("button").click();
@@ -98,7 +98,7 @@ public class ApplicationTest {
     @Test
     void shouldNotSendWithoutPhoneNumber() {
         open("http://localhost:9999");
-        $("[data-test-id='name'] input").sendKeys("Гревцов Сергей ");
+        $("[data-test-id='name'] input").sendKeys("Гревцов Сергей");
        // $("[data-test-id='phone'] input").sendKeys("79164792743");
         $("[data-test-id='agreement'] span").click();
         $("button").click();
@@ -109,7 +109,7 @@ public class ApplicationTest {
     @Test
     void shouldNotSendWithInvalidPhoneNumberLength() {
         open("http://localhost:9999");
-        $("[data-test-id='name'] input").sendKeys("Гревцов Сергей ");
+        $("[data-test-id='name'] input").sendKeys("Гревцов Сергей");
         $("[data-test-id='phone'] input").sendKeys("+791647927439");
         $("[data-test-id='agreement'] span").click();
         $("button").click();
@@ -120,7 +120,7 @@ public class ApplicationTest {
     @Test
     void shouldNotSendWithInvalidPhoneNumberLength2() {
         open("http://localhost:9999");
-        $("[data-test-id='name'] input").sendKeys("Гревцов Сергей ");
+        $("[data-test-id='name'] input").sendKeys("Гревцов Сергей");
         $("[data-test-id='phone'] input").sendKeys("+7916479274");
         $("[data-test-id='agreement'] span").click();
         $("button").click();
@@ -131,7 +131,7 @@ public class ApplicationTest {
     @Test
     void shouldNotSendWithoutCheckbox() {
         open("http://localhost:9999");
-        $("[data-test-id='name'] input").sendKeys("Гревцов Сергей ");
+        $("[data-test-id='name'] input").sendKeys("Гревцов Сергей");
         $("[data-test-id='phone'] input").sendKeys("+79164792744");
         $(".button").click();
 
